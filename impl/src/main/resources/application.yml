@@ -1,0 +1,11 @@
+server:
+  port: 8081 #Tomcat端口
+dubbo:
+    application:
+      name: impl #应用名
+    registry:
+      address: zookeeper://localhost:2181 #zookeeper地址
+    protocol:
+      name: dubbo
+      port: 20880 #dubbo服务暴露的端口
+    scan: com.zjd.impl #扫描的包名
